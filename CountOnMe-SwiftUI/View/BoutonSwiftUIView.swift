@@ -14,52 +14,10 @@ struct BoutonSwiftUIView: View {
         VStack{
             HStack{
                 VStack{
-                    Button {
-                        text.number.append("1")
-                    } label: {
-                        Text("1").frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35 )
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("1")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    Button {
-                        text.number.append("4")
-                    } label: {
-                        Text("4")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("4")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
+                    ButtonSetupSwiftUIView(text: text, number: "1", hue: 1.0, saturation: 0.031, brigthness: 0.833)
+                    ButtonSetupSwiftUIView(text: text, number: "4", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                     
-                    
-                    Button {
-                        text.number.append("7")
-                    } label: {
-                        Text("7")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("7")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
+                    ButtonSetupSwiftUIView(text: text, number: "7", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                     
                     Button {
                         text.number = ""
@@ -77,141 +35,21 @@ struct BoutonSwiftUIView: View {
                             .tag("C")
                             .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
                     }
-                    
                 }
                 VStack{
-                    Button {
-                        text.number.append("2")
-                    } label: {
-                        Text("2")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("2")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
-                    Button {
-                        text.number.append("5")
-                    } label: {
-                        Text("5")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("5")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
-                    
-                    Button {
-                        text.number.append("8")
-                    } label: {
-                        Text("8")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("8")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
-                    Button {
-                        text.number.append("0")
-                    } label: {
-                        Text("0")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("0")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
+                    ButtonSetupSwiftUIView(text: text, number: "2", hue: 1.0, saturation: 0.031, brigthness: 0.833)
+                    ButtonSetupSwiftUIView(text: text, number: "5", hue: 1.0, saturation: 0.031, brigthness: 0.833)
+                    ButtonSetupSwiftUIView(text: text, number: "8", hue: 1.0, saturation: 0.031, brigthness: 0.833)
+                    ButtonSetupSwiftUIView(text: text, number: "0", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                 }
                 VStack{
-                    Button {
-                        text.number.append("3")
-                    } label: {
-                        Text("3")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("3")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
+                    ButtonSetupSwiftUIView(text: text, number: "3", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                     
-                    Button {
-                        text.number.append("6")
-                    } label: {
-                        Text("6")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("6")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
+                    ButtonSetupSwiftUIView(text: text, number: "6", hue: 1.0, saturation: 0.031, brigthness: 0.833)
+ 
+                    ButtonSetupSwiftUIView(text: text, number: "9", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                     
-                    
-                    Button {
-                        text.number.append("9")
-                    } label: {
-                        Text("9")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag("9")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
-                    Button {
-                        text.number.append(".")
-                    } label: {
-                        Text(".")
-                            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
-                            .foregroundColor(.white)
-                            .fontWeight(.black)
-                            .background(Color(hue: 1.0, saturation: 0.031, brightness: 0.833))
-                            .hoverEffect()
-                            .clipShape(Circle())
-                            .overlay(RoundedRectangle(cornerRadius: 35)
-                                .stroke(Color.gray, lineWidth: 2).frame(width: 70))
-                            .tag(".")
-                            .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
-                    }
-                    
+                    ButtonSetupSwiftUIView(text: text, number: ".", hue: 1.0, saturation: 0.031, brigthness: 0.833)
                 }
                 VStack{
                     Button {
