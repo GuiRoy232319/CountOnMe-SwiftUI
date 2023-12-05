@@ -53,28 +53,8 @@ struct BoutonSwiftUIView: View {
                 }
                 VStack{
                     Button {
-                        if text.number.first == "+"||text.stack.first == "-"||text.stack.first == "*"||text.stack.first == "/" {
-                            text.number.removeFirst()
-                        }
-                        let temp = text.number
-                        text.stack.append(temp)
-                        print(text.stack)
-                        text.number = ""
-                        if text.stack.count > 4{
-                            guard let result = text.calculate(expression: text.stack) else {
-                                showAlert()
-                                text.stack.removeAll()
-                                text.number = ""
-                                return
-                            }
-                            print(result)
-                            text.stack.removeAll()
-                            text.number = ""
-                            text.stack.append(result)
-                            text.number.append(result)
-                        }
-                        text.stack.append("/")
-                        text.number.append("/")
+                        check()
+                       calculate(symbol: "/")
                     } label: {
                         Text("/")
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
@@ -90,28 +70,8 @@ struct BoutonSwiftUIView: View {
                     }
                     
                     Button {
-                        if text.number.first == "+"||text.stack.first == "-"||text.stack.first == "*"||text.stack.first == "/" {
-                            text.number.removeFirst()
-                        }
-                        let temp = text.number
-                        text.stack.append(temp)
-                        print(text.stack)
-                        text.number = ""
-                        if text.stack.count > 4{
-                            guard let result = text.calculate(expression: text.stack) else {
-                                showAlert()
-                                text.stack.removeAll()
-                                text.number = ""
-                                return
-                            }
-                            print(result)
-                            text.stack.removeAll()
-                            text.number = ""
-                            text.stack.append(result)
-                            text.number.append(result)
-                        }
-                        text.stack.append("*")
-                        text.number.append("*")
+                        check()
+                        calculate(symbol: "*")
                     } label: {
                         Text("*")
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
@@ -127,27 +87,8 @@ struct BoutonSwiftUIView: View {
                     }
                     
                     Button {
-                        if text.number.first == "+"||text.stack.first == "-"||text.stack.first == "*"||text.stack.first == "/" {
-                            text.number.removeFirst()
-                        }
-                        let temp = text.number
-                        text.stack.append(temp)
-                        print(text.stack)
-                        text.number = ""
-                        if text.stack.count > 4{
-                            guard let result = text.calculate(expression: text.stack) else {
-                                showAlert()
-                                text.stack.removeAll()
-                                text.number = ""
-                                return
-                            }
-                            text.stack.removeAll()
-                            text.number = ""
-                            text.stack.append(result)
-                            text.number.append(result)
-                        }
-                        text.stack.append("+")
-                        text.number.append("+")
+                       check()
+                        calculate(symbol: "+")
                     } label: {
                         Text("+")
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
@@ -162,28 +103,8 @@ struct BoutonSwiftUIView: View {
                             .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
                     }
                     Button {
-                        if text.number.first == "+"||text.stack.first == "-"||text.stack.first == "*"||text.stack.first == "/" {
-                            text.number.removeFirst()
-                        }
-                        let temp = text.number
-                        print(temp)
-                        text.stack.append(temp)
-                        print(text.stack)
-                        text.number = ""
-                        if text.stack.count > 4{
-                            guard let result = text.calculate(expression: text.stack) else {
-                                showAlert()
-                                text.stack.removeAll()
-                                text.number = ""
-                                return
-                            }
-                            text.stack.removeAll()
-                            text.number = ""
-                            text.stack.append(result)
-                            text.number.append(result)
-                        }
-                        text.stack.append("-")
-                        text.number.append("-")
+                       check()
+                        calculate(symbol: "-")
                     } label: {
                         Text("-")
                             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 70)
@@ -200,11 +121,10 @@ struct BoutonSwiftUIView: View {
             }
             .frame(minWidth: 0, maxWidth: .infinity)
             Button {
-                if text.number.first == "+"||text.stack.first == "-"||text.stack.first == "*"||text.stack.first == "/" {
-                    text.number.removeFirst()
-                }
+                check()
                 let temp = text.number
                 text.stack.append(temp)
+                print(text.stack)
                 text.number = ""
                 guard let result = text.calculate(expression: text.stack) else {
                     showAlert()
@@ -233,9 +153,36 @@ struct BoutonSwiftUIView: View {
             .shadow(color: Color.gray , radius: 10, x: 2, y: 2)
         }.frame(minWidth: 0, maxWidth: .infinity)
     }
-    func showAlert(){
+    private func showAlert(){
         let alertVC = UIAlertController(title: "Erreur", message: "Expression incorrecte", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+    }
+    private func check(){
+        if text.number.first == "+"||text.number.first == "-"||text.number.first == "*"||text.number.first == "/" {
+            text.number.removeFirst()
+        }
+    }
+    private func calculate(symbol: String){
+        let temp = text.number
+        print(temp)
+        text.stack.append(temp)
+        print(text.stack)
+        text.number = ""
+        if text.stack.count > 4{
+            guard let result = text.calculate(expression: text.stack) else {
+                showAlert()
+                text.stack.removeAll()
+                text.number = ""
+                return
+            }
+            text.stack.removeAll()
+            text.number = ""
+            text.stack.append(result)
+            text.number.append(result)
+        }
+        text.stack.append(symbol)
+        text.number.append(symbol)
+        
     }
 }
 
