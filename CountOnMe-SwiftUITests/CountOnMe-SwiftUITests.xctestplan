@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "94DC1902-AA24-47AA-AD5A-CCAC9A67606E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:CountOnMe-SwiftUI.xcodeproj",
+        "identifier" : "F065093B2B1DC885000BE005",
+        "name" : "CountOnMe-SwiftUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

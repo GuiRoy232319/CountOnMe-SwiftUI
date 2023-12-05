@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F065092D2B1DC883000BE005 /* CountOnMe_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065092C2B1DC883000BE005 /* CountOnMe_SwiftUIApp.swift */; };
+		F053270C2B1DEBFA00AD62E4 /* DisplaySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F053270B2B1DEBFA00AD62E4 /* DisplaySwiftUIView.swift */; };
+		F05327112B1E496500AD62E4 /* ButtonSetupSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05327102B1E496500AD62E4 /* ButtonSetupSwiftUIView.swift */; };
 		F065092F2B1DC883000BE005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065092E2B1DC883000BE005 /* ContentView.swift */; };
-		F06509312B1DC883000BE005 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06509302B1DC883000BE005 /* Item.swift */; };
 		F06509332B1DC885000BE005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06509322B1DC885000BE005 /* Assets.xcassets */; };
 		F06509372B1DC885000BE005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06509362B1DC885000BE005 /* Preview Assets.xcassets */; };
 		F06509412B1DC885000BE005 /* CountOnMe_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06509402B1DC885000BE005 /* CountOnMe_SwiftUITests.swift */; };
-		F065094B2B1DC885000BE005 /* CountOnMe_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065094A2B1DC885000BE005 /* CountOnMe_SwiftUIUITests.swift */; };
-		F065094D2B1DC885000BE005 /* CountOnMe_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065094C2B1DC885000BE005 /* CountOnMe_SwiftUIUITestsLaunchTests.swift */; };
+		F065095D2B1DC8DC000BE005 /* BoutonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065095C2B1DC8DC000BE005 /* BoutonSwiftUIView.swift */; };
+		F065095F2B1DC956000BE005 /* ModelCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F065095E2B1DC956000BE005 /* ModelCalculator.swift */; };
+		F06509612B1DDEC8000BE005 /* CountOnMe_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06509602B1DDEC8000BE005 /* CountOnMe_SwiftUIApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +36,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F053270B2B1DEBFA00AD62E4 /* DisplaySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySwiftUIView.swift; sourceTree = "<group>"; };
+		F053270D2B1E326E00AD62E4 /* CountOnMe-SwiftUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "CountOnMe-SwiftUITests.xctestplan"; sourceTree = "<group>"; };
+		F05327102B1E496500AD62E4 /* ButtonSetupSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSetupSwiftUIView.swift; sourceTree = "<group>"; };
 		F06509292B1DC883000BE005 /* CountOnMe-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CountOnMe-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F065092C2B1DC883000BE005 /* CountOnMe_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOnMe_SwiftUIApp.swift; sourceTree = "<group>"; };
 		F065092E2B1DC883000BE005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F06509302B1DC883000BE005 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F06509322B1DC885000BE005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06509342B1DC885000BE005 /* CountOnMe_SwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CountOnMe_SwiftUI.entitlements; sourceTree = "<group>"; };
 		F06509362B1DC885000BE005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F065093C2B1DC885000BE005 /* CountOnMe-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CountOnMe-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06509402B1DC885000BE005 /* CountOnMe_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOnMe_SwiftUITests.swift; sourceTree = "<group>"; };
 		F06509462B1DC885000BE005 /* CountOnMe-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CountOnMe-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F065094A2B1DC885000BE005 /* CountOnMe_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOnMe_SwiftUIUITests.swift; sourceTree = "<group>"; };
-		F065094C2B1DC885000BE005 /* CountOnMe_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountOnMe_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F065095C2B1DC8DC000BE005 /* BoutonSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonSwiftUIView.swift; sourceTree = "<group>"; };
+		F065095E2B1DC956000BE005 /* ModelCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCalculator.swift; sourceTree = "<group>"; };
+		F06509602B1DDEC8000BE005 /* CountOnMe_SwiftUIApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountOnMe_SwiftUIApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +82,6 @@
 			children = (
 				F065092B2B1DC883000BE005 /* CountOnMe-SwiftUI */,
 				F065093F2B1DC885000BE005 /* CountOnMe-SwiftUITests */,
-				F06509492B1DC885000BE005 /* CountOnMe-SwiftUIUITests */,
 				F065092A2B1DC883000BE005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,11 +99,12 @@
 		F065092B2B1DC883000BE005 /* CountOnMe-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				F065092C2B1DC883000BE005 /* CountOnMe_SwiftUIApp.swift */,
-				F065092E2B1DC883000BE005 /* ContentView.swift */,
-				F06509302B1DC883000BE005 /* Item.swift */,
+				F065095B2B1DC8AD000BE005 /* Model */,
+				F065095A2B1DC8AB000BE005 /* View */,
+				F06509592B1DC8A7000BE005 /* Controller */,
 				F06509322B1DC885000BE005 /* Assets.xcassets */,
 				F06509342B1DC885000BE005 /* CountOnMe_SwiftUI.entitlements */,
+				F06509602B1DDEC8000BE005 /* CountOnMe_SwiftUIApp.swift */,
 				F06509352B1DC885000BE005 /* Preview Content */,
 			);
 			path = "CountOnMe-SwiftUI";
@@ -118,18 +121,36 @@
 		F065093F2B1DC885000BE005 /* CountOnMe-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F053270D2B1E326E00AD62E4 /* CountOnMe-SwiftUITests.xctestplan */,
 				F06509402B1DC885000BE005 /* CountOnMe_SwiftUITests.swift */,
 			);
 			path = "CountOnMe-SwiftUITests";
 			sourceTree = "<group>";
 		};
-		F06509492B1DC885000BE005 /* CountOnMe-SwiftUIUITests */ = {
+		F06509592B1DC8A7000BE005 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F065094A2B1DC885000BE005 /* CountOnMe_SwiftUIUITests.swift */,
-				F065094C2B1DC885000BE005 /* CountOnMe_SwiftUIUITestsLaunchTests.swift */,
+				F065092E2B1DC883000BE005 /* ContentView.swift */,
 			);
-			path = "CountOnMe-SwiftUIUITests";
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F065095A2B1DC8AB000BE005 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F065095C2B1DC8DC000BE005 /* BoutonSwiftUIView.swift */,
+				F053270B2B1DEBFA00AD62E4 /* DisplaySwiftUIView.swift */,
+				F05327102B1E496500AD62E4 /* ButtonSetupSwiftUIView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F065095B2B1DC8AD000BE005 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F065095E2B1DC956000BE005 /* ModelCalculator.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F05327112B1E496500AD62E4 /* ButtonSetupSwiftUIView.swift in Sources */,
+				F06509612B1DDEC8000BE005 /* CountOnMe_SwiftUIApp.swift in Sources */,
 				F065092F2B1DC883000BE005 /* ContentView.swift in Sources */,
-				F06509312B1DC883000BE005 /* Item.swift in Sources */,
-				F065092D2B1DC883000BE005 /* CountOnMe_SwiftUIApp.swift in Sources */,
+				F065095F2B1DC956000BE005 /* ModelCalculator.swift in Sources */,
+				F065095D2B1DC8DC000BE005 /* BoutonSwiftUIView.swift in Sources */,
+				F053270C2B1DEBFA00AD62E4 /* DisplaySwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +304,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F065094B2B1DC885000BE005 /* CountOnMe_SwiftUIUITests.swift in Sources */,
-				F065094D2B1DC885000BE005 /* CountOnMe_SwiftUIUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,8 +458,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -446,10 +468,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CountOnMe-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -474,8 +497,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -484,10 +507,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CountOnMe-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

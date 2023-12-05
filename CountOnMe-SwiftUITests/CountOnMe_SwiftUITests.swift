@@ -7,29 +7,66 @@
 
 import XCTest
 
-final class CountOnMe_SwiftUITests: XCTestCase {
+@testable import CountOnMe_SwiftUI
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    class CalculatorModelTests: XCTestCase {
+      
+        let calculatorModel = CalculatorModel()
+        
+        func testGivenTwoNumber_WhenAddAdditionOperator_ThenResultShouldBeAdditionOfTheTwoNumber() {
+            let result = calculatorModel.calculate(expression:["1","+","1"])
+            XCTAssertEqual(result, "2")
+        }
+        
+        func testGivenThreeNumber_WhenAddAdditionAnndMultiplicationOperator_ThenResultShouldBeLogicalMathLogic(){
+            let result = calculatorModel.calculate(expression: ["15", "+", "2", "*", "8"])
+            XCTAssertEqual(result, "31")
+        }
+        func testGivenTwoNumber_WhenAddSubstractionOperator_ThenResultShouldBeSubstractionOfTheTwoNumber() {
+            let result = calculatorModel.calculate(expression:[ "5","-","2"])
+            XCTAssertEqual(result, "3")
+        }
+        
+        func testGivenTwoNumber_WhenAddMultiplicationOperator_ThenResultShouldBeMultiplicationOfTheTwoNumber() {
+            let result = calculatorModel.calculate(expression: ["2","*","8"])
+            XCTAssertEqual(result, "16")
+        }
+        
+        func testGivenTwoNumber_WhenAddDivisionOperator_ThenResultShouldBeDivisionOfTheTwoNumber() {
+            let result = calculatorModel.calculate(expression: ["8","/","4"])
+            XCTAssertEqual(result, "2")
+        }
+        
+        func testGivenOneNumber_WhenAddingOnOperator_ThenResultShouldBeNil() {
+            let result = calculatorModel.calculate(expression: ["2"," + "])
+            XCTAssertNil(result)
+        }
+        
+        func testGivenTwoNumber_WhenAddingOnDividerOrMultiplication_ThenResultShouldBeDouble(){
+            let result = calculatorModel.calculate(expression: ["5","/","4"])
+            XCTAssertEqual(result, "1")
+        }
+        
+        func testGivenFirstNumberAndZero_WhenAddingDivider_ThenResultShouldBeZero() {
+            let result = calculatorModel.calculate(expression: ["5","/","0"])
+            XCTAssertEqual(result, "0")
+        }
+        
+        func testGivenTwoNumber_WhenAddingInvalideOperator_ThenResultShouldBeError() {
+            let result = calculatorModel.calculate(expression: ["5"," /- ","0"])
+            XCTAssertEqual(result, "Error")
+        }
+        func testGivenFiveNumber_whenAddingTwoAdditionOperator_ThenResultShouldBeTrue(){
+            let result = calculatorModel.checkStackCount(stack: ["15", "+", "2", "+", "8"])
+            XCTAssertTrue(result)
+        }
+        func testGivenFiveNumber_whenAddingOneAdditionOperatorAndOneMultiplication_ThenResultShouldBeFalse(){
+            let result = calculatorModel.checkStackCount(stack: ["15", "+", "2", "*", "8"])
+            XCTAssertFalse(result)
+        }
+        func test() {
+            let result = calculatorModel.calculate(expression: ["8","/","0","/"])
+            XCTAssertEqual(result, nil)
         }
     }
 
-}
